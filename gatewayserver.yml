@@ -17,3 +17,12 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: "http://eurekaserver:8761/eureka/"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      enabled: true
